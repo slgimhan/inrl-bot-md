@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~44115mKNA65980b59f792099363ede3d122f', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -19,7 +19,7 @@ module.exports = {
     ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "false"),
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
-    CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
+    CALL_BLOCK : toBool(process.env.CALL_BLOCK || "treu"),
     STATUS_VIEW : process.env.STATUS_VIEW || "false",
     SAVE_STATUS : toBool(process.env.SAVE_STATUS || "false"),
     ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "false"),
